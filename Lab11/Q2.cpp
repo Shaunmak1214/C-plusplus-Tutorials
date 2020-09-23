@@ -6,7 +6,7 @@ using namespace std;
 
 class Staff {
 
-    protected:
+    private:
     string name, id;
     int age;
     float salary, nett_salary;
@@ -28,6 +28,9 @@ class Staff {
         cin >> salary;
 
     }
+
+    friend class Executive;
+    friend class Salesperson;
 
 };
 
@@ -116,32 +119,46 @@ class Salesperson : public Staff {
 
 int main() {
 
-   int choice;
+    int choice;
+    char cont;
 
-   cout << "Enter [1] for Executive    OR    [2] for Salesperson : ";
-   cin >> choice;
+    cout << "Do you want to continue ?";
+    cin >> cont;
 
-   if (choice == 1)
-   {
-      Executive e;
-      e.setdata();
-      e.setExecutive();
-      e.cal_salary_exec();
-      e.display();
-   }
-   else if (choice == 2)
-   {
-      Salesperson s;
-      s.setdata();
-      s.setSalesperson();
-      s.cal_salary_sales();
-      s.display();
-   }
-   else
-   {
-      cout << "INVALID ENTRY..." << endl;
-   }
+    while(cont == 'Y') {
 
-   return 0;
+        cout << "Enter [1] for Executive    OR    [2] for Salesperson : ";
+        cin.ignore();
+        cin >> choice;
+
+        if (choice == 1) {
+
+            Executive e;
+            e.setdata();
+            e.setExecutive();
+            e.cal_salary_exec();
+            e.display();
+
+        }else if (choice == 2) {
+
+            Salesperson s;
+            s.setdata();
+            s.setSalesperson();
+            s.cal_salary_sales();
+            s.display();
+
+        }else {
+
+            cout << "INVALID ENTRY..." << endl;
+
+        }
+
+            
+        cout << "Do you want to continue ?";
+        cin >> cont;
+
+    }
+
+    return 0;
 
 }
