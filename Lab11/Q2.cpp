@@ -6,7 +6,7 @@ using namespace std;
 
 class Staff {
 
-    private:
+    protected:
     string name, id;
     int age;
     float salary, nett_salary;
@@ -29,8 +29,12 @@ class Staff {
 
     }
 
-    friend class Executive;
-    friend class Salesperson;
+    //getter function
+    float getNett_salary() {
+
+        return nett_salary;
+
+    }
 
 };
 
@@ -81,7 +85,6 @@ class Salesperson : public Staff {
     public:
     void setSalesperson() {
 
-        setdata();
         cout << "Enter Units    :";
         cin >> units;
     
@@ -119,8 +122,11 @@ class Salesperson : public Staff {
 
 int main() {
 
-    int choice;
+    int choice, count=0, totalcount=0;
     char cont;
+    double total=0, salary;
+
+    Staff s;
 
     cout << "Do you want to continue ?";
     cin >> cont;
@@ -138,6 +144,7 @@ int main() {
             e.setExecutive();
             e.cal_salary_exec();
             e.display();
+            salary = e.getNett_salary();
 
         }else if (choice == 2) {
 
@@ -147,17 +154,25 @@ int main() {
             s.cal_salary_sales();
             s.display();
 
+            salary = s.getNett_salary();
+
         }else {
 
             cout << "INVALID ENTRY..." << endl;
 
         }
 
+        totalcount++;
+        total += salary;
+
             
         cout << "Do you want to continue ?";
         cin >> cont;
 
     }
+
+    cout << "Total staff:" << totalcount << endl;
+    cout << "Total Payouts is RM " << total;
 
     return 0;
 
