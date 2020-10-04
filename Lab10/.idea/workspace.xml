@@ -27,7 +27,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36705e87-ff84-4651-ac60-ab62d9d20765" name="Default Changelist" comment="" />
+    <list default="true" id="36705e87-ff84-4651-ac60-ab62d9d20765" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab11/Q2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab11/Q2.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OOP Project" />
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
@@ -66,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600331418606</updated>
       <workItem from="1600331419693" duration="151000" />
+      <workItem from="1601284299378" duration="117000" />
     </task>
     <servers />
   </component>
@@ -82,11 +86,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="126" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600331543040">
       <screen x="1920" y="-53" width="1920" height="1050" />
     </state>
     <state x="2334" y="126" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/1920.-53.1920.1050@1920.-53.1920.1050" timestamp="1600331543040" />
+    <state x="2660" y="190" key="FileChooserDialogImpl" timestamp="1601284411484">
+      <screen x="1920" y="-104" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="190" key="FileChooserDialogImpl/0.0.1536.834/1920.-104.1920.1080@1920.-104.1920.1080" timestamp="1601284411484" />
   </component>
 </project>
